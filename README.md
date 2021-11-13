@@ -1,2 +1,2 @@
 # SpaceTravelsWeb
-Gestion de vaijes al sapcio
+Gestion de Viajes al Spacio
