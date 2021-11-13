@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Space-Travels</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body class="">
+
+	<section class="vh-100">
+		<div class="container py-5 h-100">
+			<div
+				class="row d-flex align-items-center justify-content-center h-100">
+				<div class="col-md-8 col-lg-7 col-xl-6">
+					<img
+						src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+						class="img-fluid" alt="Phone image">
+				</div>
+				<div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+					<form id="form-login">
+						<h1 style="color: #000080;"
+							class="h4  my-4 justify-content-center  m-0  row container-fluid">Welcome
+							to Space-Travels</h1>
+						<!-- Email input -->
+						<div class="form-outline mb-4">
+						<label class="form-label" for="form1Example13">Usuario</label>
+							<input type="text" id="usuario"
+								class="form-control form-control-lg"
+								placeholder="Ingresa tu Usuario" required="required" />
+						</div>
+
+						<!-- Password input -->
+						<div class="form-outline mb-4">
+						<label class="form-label" for="form1Example23">Password</label>
+							<input type="password" id="contrasena"
+								class="form-control form-control-lg"
+								placeholder="Ingresa tu Contraseña" required="required" />
+						</div>
+
+						<div class="d-flex justify-content-around align-items-center mb-4">
+							<!-- Checkbox -->
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value=""
+									id="form1Example3" checked /> <label class="form-check-label"
+									for="form1Example3"> Remember me </label>
+							</div>
+							<a href="#!">Forgot password?</a>
+							<a href="createAccount.html">registrar</a>
+						    </div>
+
+						<!-- Submit button -->
+						<button type="submit" id="btnEntrar"
+							class="btn btn-primary btn-lg btn-block">Sign in</button>
+
+						<a class="btn btn-primary btn-lg btn-block"
+							style="background-color: #3b5998" href="#!" role="button"> <i
+							class="fab fa-facebook-f me-2"></i>Continue with Facebook
+						</a>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="usuario-correcto" class="alert alert-success d-none"
+		role="alert">LOGEO EXITOSO....</div>
+	<div id="usuario-incorrecto" class="alert alert-danger d-none"
+		role="alert">No exite este usuario, verifica tus datos</div>
+		
+	<script>
+	$('#btnEntrar').click(function() {
+	$('#btnEntrar').html('<span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>Loading...').addClass('disabled');
+	});
+	</script>
+</body>
+</html>
